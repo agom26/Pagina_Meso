@@ -110,10 +110,6 @@ body{
     height: 300px;
     float: left;
 }
-.margeneslados{
-    margin-left: 15%;
-    margin-right: 8%;
-}
  
 .foot{
     
@@ -127,21 +123,7 @@ body{
 }
 
 
-#nuestros-programas{
-    color: #034732;
-    text-align: center;
-}
 
-#nuestros-programas .container{
-    padding: 150px 12px;
-}
-
-#nuestros-programas h2{
-        margin-top: 0;
-}
-#nuestros-programas p{
-        display: none;
-}
 
 #nuestros-programas .carta{
     background-position: center center;
@@ -190,10 +172,48 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: #01633B;
+    background-color: #034732;
     color: white;
 
 }
+#direcciones p{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    position: relative;
+    font-size: 13px;
+    color: #ffffff;
+    -webkit-text-size-adjust: 100%;
+    margin-bottom: 9%;
+    margin-top: 9%;
+}
+
+#medicinayodonto margenes1{
+    justify-content: flex-end;
+}
+#medicinayodonto margenes2{
+    justify-content: flex-start;
+}
+
+#plandiarioyfin margenes1{
+    justify-content: flex-end;
+}
+#plandiarioyfin margenes2{
+    justify-content: flex-start;
+}
+#maestrias margenes{
+    justify-content: center;
+    align-items: center;
+}
+
+
+
 
  @media (max-width:1150px){
     
