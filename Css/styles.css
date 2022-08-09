@@ -192,19 +192,7 @@ body{
     margin-top: 9%;
 }
 
-#medicinayodonto margenes1{
-    justify-content: flex-end;
-}
-#medicinayodonto margenes2{
-    justify-content: flex-start;
-}
 
-#plandiarioyfin margenes1{
-    justify-content: flex-end;
-}
-#plandiarioyfin margenes2{
-    justify-content: flex-start;
-}
 #maestrias margenes{
     justify-content: center;
     align-items: center;

@@ -36,7 +36,7 @@
 
 
     window.addEventListener('resize', ()=>{
-        if(window.innerWidth > 1000){
+        if(window.innerWidth > 1150){
             deleteStyleHeight();
             if(list.classList.contains('menu_links--show'))
                 list.classList.remove('menu_links--show');
@@ -46,7 +46,7 @@
         }
     });
 
-    if(window.innerWidth <= 100){
+    if(window.innerWidth <= 1150){
         addClick();
     }
 
