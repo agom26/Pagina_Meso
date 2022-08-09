@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,800;0,900;1,800;1,900&display=swap');
+ 
+ 
+header{
+    background: #403865;
+    /* background: #FFFFFF; */
+    color:#01633B;
+}
+ 
+.body__menu{
+    font-family: 'Poppins', sans-serif;
+    margin: 1.5%;
+    background-color: #ffffff;              /* Color pagina */
+}
+ 
+.mtop{
+margin-top: 30%;
+}
+ 
+.mtop1{
+    margin-top: 5%;
+}
+ 
+.mbo1{
+    margin-bottom: 5%;
+}
+.mbo2{
+    margin-bottom: 15%;
+}
+.mtop11{
+    margin-top: 2%;
+}
+.mtop2{
+    margin-top: 10%;
+}
+ 
+.mtop12{                    
+    margin: 5%;
+}
+ 
+.fondoverde{
+    background-color: #01633B;
+ 
+}
+.fondoverde1{
+    /* background-color: #01633B; */
+    background-image: url("/assets/IMagenes/Graduacion.png");
+ 
+}
+ 
+ 
+ 
+ 
+ 
+.mlados{
+margin-left: auto;
+margin-right: auto;  
+margin-top: 2%;
+margin-bottom: 2%;
+}
+ 
+.main{
+    background: #ffffff;
+    margin: 50px;
+    padding: auto;
+}
+ 
+.center{
+    text-align: center;
+    align-items: center;
+   
+}
+.color1{
+    background: #f9f9f9;
+    color: rgb(0, 0, 0);
+}
+ 
+aside{
+    background: #ffffff;
+    color: #ffff;
+}
+footer{
+    background: #ffffff;
+    color: rgb(4, 53, 4);
+}
+ 
+/* h1,h2{
+    color: black;
+} */
+ 
+.hs{
+    color: black;
+}
+ 
+.hsF{
+    color: #ffffff;
+}
+.hsM{
+   
+     color: #e4e2e2;
+}
+.hsM2{
+   
+     color: #000000;
+}
+.sh4{
+    color: #ffffff;
+}
+ 
+.sh3{
+    color: #ffffff;
+ 
+}
+ 
+/* opacar imagen */
+ 
+ 
+h5{
+    color: rgb(155, 155, 155);
+}
+ 
+/* h4{
+    color: #ffffff;
+} */
+ 
+.input{
+    background-color: #EEEEEE;
+    color: rgb(0, 0, 0);
+    padding: 1% 220px;
+    align-items: left;
+}
+.input2{
+    background-color: #EEEEEE;
+    margin-top: 2%;
+    color: rgb(0, 0, 0);
+    padding: 80px 550px;
+ 
+}
+ 
+.alingright{
+    text-align: right;
+}
+ 
+.menu{
+    background-color: #c69999;          /* Menu Encabezado */
+    color: rgb(0, 0, 0);
+    height: 80px;
+}
+ 
+.menu__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* horizontalmente a los elementos */
+    width: 90%;    
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto; /* para que centre */  
+}
+ 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+.menu__links{
+    height: 100%;
+    transition: transform .5s; /* para animar */
+    display: flex;
+}
+ 
+.menu__link{
+    color: rgb(13, 105, 13);        /* Color letras menu */
+    text-decoration: none;
+    padding: 0 22px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    line-height: 250%;
+}
+ 
+.menu__item{
+    list-style: none;
+    position: relative;  /* para que se junten */
+    height: 100%;
+    --clip: polygon(0 0, 100% 0, 100% 0, 0 0);          /* Ocultar */
+    --transform: rotate(-90deg);
+ 
+}
+ 
+.menu__item:hover{
+    --clip: polygon(0 0, 100% 0, 100% 100%, 0% 100%);   /* mostrar */
+    --transform: rotate();
+ 
+}
+ 
+.menu__nesting{
+    clip-path: var(--clip);
+    list-style: none;
+    transition: clip-path .3s;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: max-content;
+    transform: translateY(100%);
+    background-color: #ffffff;
+ 
+}
+ 
+.menu__Flecha{
+    transform: var(--transform);
+    transition: transform .31s;
+    display: block;
+    margin-left: 3px;
+}
+ 
+.menu__lupa{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 15%;
+    cursor: pointer;
+}
+ 
+.menu__img{
+    display: block;
+    width: 5p ;
+}
+ 
+@media (max-width:800px){
+    .menu__hamburguer{
+        display: flex;
+    }
+ 
+    .menu__item{
+        --clip:0;
+        overflow:hidden ;
+    }
+ 
+    .menu__links{
+        position: fixed;
+        max-width: 400px;
+        width: 100%;
+        top: 70px;
+        bottom: 0;
+        right: 0;
+        background-color: #000;
+        overflow-y: auto;
+        display: grid;
+        grid-auto-rows: max-content;
+        transform: translateX(100%);
+    }
+ 
+    .menu__links--show{
+        transform: unset;
+        width: 100%;
+    }
+ 
+    .menu__link{
+        padding: 25px 0;
+        padding-left: 30px;
+        height: auto;
+    }
+ 
+    .menu__Flecha{
+        margin-left: auto;
+        margin-right: 20px;
+    }
+ 
+    .menu__nesting{
+        display: grid;
+        position: unset;
+        width: 100%;
+        transform: translateY(0);
+        height: 0;
+        transition: height .3s;
+    }
+ 
+    .menu__link--inside{
+        width: 90%;
+        margin-left: auto;
+        border-left: 1px solid #798499;
+    }
+}
+ 
+ 
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+.texto-encima{
+    color: #EEEEEE;
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.centrado{
+    color: #EEEEEE;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.centrado1{
+    color: #EEEEEE;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.centrado2{
+    color: #EEEEEE;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+ 
+.section {
+    --opacidad-negro: 0.5;
+    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("/assets/IMagenes/Graduacion.png");
+}
+ 
+.botonverde{
+    color: rgb(47, 113, 47);
+}
+ 
+ 
+ 
+/*
+ */
+ 
+ #d{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #034732;
+    color: white;
+ 
+}
+#d2 p{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    position: relative;
+    font-size: 13px;
+    color: #ffffff;
+    -webkit-text-size-adjust: 100%;
+    margin-bottom: 9%;
+    margin-top: 9%;
+}
